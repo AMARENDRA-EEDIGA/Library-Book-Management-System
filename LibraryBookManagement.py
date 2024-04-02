@@ -127,8 +127,8 @@ def search():
     if not found:
         messagebox.showinfo("Search", "No matching record found.")
 
-
-Label(root, text="LIBRARY BOOK MANAGEMENT", width=15, height=2, bg="green", fg="#fff", font='arial 20 bold').pack(side=TOP, fill=X)
+# fg = foreground color of the text(text-color)
+Label(root, text="LIBRARY BOOK MANAGEMENT", height=2, bg="green", fg="#fff", font='arial 20 bold').pack(side=TOP,fill=X)
 
 Search = StringVar()
 Entry(root, textvariable=Search, width=15, font="arial 13").place(x=760, y=21)
@@ -136,7 +136,7 @@ Entry(root, textvariable=Search, width=15, font="arial 13").place(x=760, y=21)
 srch = Button(root, text="Search", compound=LEFT, width=10, height=1, bg=skyblue, font="arial 8 bold", command=search)
 srch.place(x=900, y=21)
 
-Label(root, text="SerialNumber:", font="arial 13", fg="orange", bg=background).place(x=30, y=80)
+Label(root, text="Serial-Number:", font="arial 13", fg="orange", bg=background).place(x=30, y=80)
 Label(root, text="Date:", font="arial 13", fg="orange", bg=background).place(x=550, y=80)
 Button(root, text="Clear Data", width=18, height=1, font="arial 12 bold", bg="#f0687c", command=clear).place(x=760, y=80)
 
